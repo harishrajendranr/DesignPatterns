@@ -1,0 +1,18 @@
+package DesignPatternNew.Observer;
+
+public class StatisticDisplay implements Observer {
+    public int temperature;
+    public int humidity;
+    public int pressure;
+    @Override
+    public void Update(int temperature, int humidity, int pressure) {
+        this.temperature = temperature;
+        this.humidity = humidity;
+        this.pressure = pressure;
+        Display();
+    }
+    public void Display()
+    {
+        System.out.println("Displaying the StatisticDisplay Value "+temperature+" , "+humidity+" , "+pressure);
+    }
+}

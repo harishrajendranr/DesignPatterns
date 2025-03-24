@@ -1,0 +1,13 @@
+package DesignPatternNew.Decorator;
+
+public class SimpleCoffee implements Coffee{
+    @Override
+    public int cost() {
+        return 10;
+    }
+
+    @Override
+    public String description() {
+        return "Normal hot Coffee";
+    }
+}
